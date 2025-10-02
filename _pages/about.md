@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.informatics.uci.edu/'>UCI Informatics</a> · NLP for Healthcare · Clinical AI & Communication
+subtitle: <a href='https://www.informatics.uci.edu/'>UCI Informatics</a> · AI for Healthcare · Clinical Informatics
 
 profile:
   align: right
