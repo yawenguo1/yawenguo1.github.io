@@ -16,13 +16,15 @@ profile:
 selected_papers: true
 social: true
 
+# NEWS section (al-folio "announcements"). Set enabled:true to show it again.
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 5
 
+# "Latest posts" section below. Leaving this ON.
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 ---
@@ -31,14 +33,27 @@ Hi, I’m **Yawen Guo**, a PhD student in the Department of Informatics at UC Ir
 My work sits at the intersection of **AI** and **clinical informatics**, with a focus on how NLP and LLMs can improve patient–provider communication and clinical workflows.
 
 ### research focus
-- **Secure messaging (patient–provider):** large-scale reviews; content & UX analyses; LLM-assisted triage/drafting and safety.
-- **Ambient AI scribes / documentation:** effects on efficiency, note quality, and equity.
-- **Data drift & monitoring:** pipelines for structured + text data (BioBERT embeddings; KL/JS/KS; PCA-based drift).
+
+- **Ambient AI for clinical scribes and documentation** — evaluation of ambient note–generation tools, customization across specialties, and impact on efficiency, equity, and education.  
+- **Patient–provider communication via patient portals** — large-scale analyses of secure messaging, computational methods, and AI-assisted triage/drafting tools.  
+- **Social media–based population health analytics** — large-scale text mining (Twitter, YouTube) for public attitudes toward health policies and pandemic responses.  
+- **Mining social determinants of health (SDOH)** — developing a cardiovascular disease–specific SDOH ontology from large-scale clinical notes, integrating SDOH with predictive modeling of outcomes.  
 
 ### collaborations
-- **UCI Health** (clinical documentation & messaging)
-- **Mayo Clinic** (LLM-assisted social determinants of health(SDoH) ontology development)
-- **Keck Medicine of USC** (drift monitoring & predictive modeling)
+
+- **UCI Health**  
+  - Clinical AI for documentation (Epic Signal, ambient scribes)  
+  - AI-assisted secure messaging in patient portals  
+  - AI chatbot pilots to streamline resident workflows  
+
+- **Mayo Clinic**  
+  - LLM-assisted SDOH ontology development (cardiovascular focus)  
+  - Predictive modeling for cardiovascular risk incorporating SDOH  
+
+- **Keck Medicine of USC**  
+  - Drift monitoring pipelines for structured and unstructured clinical data (BioBERT embeddings; KL/JS/KS; PCA-based drift)  
+  - Predictive modeling for transfer center case prioritization, length of stay, readmission, and mortality  
+
 
 ### selected recognition
 - **AMIA Student Paper Competition – 2nd Place (2022)**
@@ -46,7 +61,7 @@ My work sits at the intersection of **AI** and **clinical informatics**, with a 
 
 ### teaching
 - **INF 171 – Health Informatics**: Teaching Assistant (2021)  
-- **INF 171 – Health Informatics**: Guest Lecture — *Clinical AI applications* (2024)
+- **INF 171 – Health Informatics**: Guest Lecture — *Clinical AI applications* (2024, 2025)
 
 I build practical, reproducible tooling for clinicians and data teams and enjoy collaborative, open science.  
 If you’d like to connect or collaborate, feel free to reach out.
