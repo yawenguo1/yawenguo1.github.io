@@ -11,7 +11,7 @@ nav_order: 6
 
 - **INF 171 — Health Informatics**  
   **Teaching Assistant (2021)**  
-  Led discussion sections, graded assignments, and supported students across core topics in clinical informatics.
+  Led discussions, graded assignments, and supported students across core topics in clinical informatics.
 
 - **INF 171 — Health Informatics**  
   **Guest Lecturer — _Clinical AI applications_ (2024, 2025)**  
