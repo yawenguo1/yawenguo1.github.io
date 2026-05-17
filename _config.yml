@@ -75,7 +75,7 @@ cronitor_analytics:
 pirsch_analytics:
 openpanel_analytics:
 
-google_site_verification:
+google_site_verification: B8htedS6edTyEKJQ2gVKASa4F5cWjtKWvovpingLdho
 bing_site_verification:
 
 # -----------------------------------------------------------------------------
@@ -348,7 +348,7 @@ enable_google_analytics: false
 enable_cronitor_analytics: false
 enable_pirsch_analytics: false
 enable_openpanel_analytics: false
-enable_google_verification: false
+enable_google_verification: true
 enable_bing_verification: false
 enable_masonry: true
 enable_math: true
