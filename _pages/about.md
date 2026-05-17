@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.informatics.uci.edu/'>UCI Informatics</a> · AI for Healthcare · Clinical Informatics
+subtitle: <a href='https://www.informatics.uci.edu/'>UCI Informatics</a> · Human-Centered AI for Healthcare · Clinical Informatics
 
 profile:
   align: right
@@ -14,7 +14,7 @@ profile:
     <p>Irvine, CA 92697</p>
 
 selected_papers: true
-social: true
+social: false
 
 # NEWS section (al-folio "announcements"). Set enabled:true to show it again.
 announcements:
@@ -29,39 +29,47 @@ latest_posts:
   limit: 3
 ---
 
-Hi, I’m **Yawen Guo**, a PhD student in the Department of Informatics at UC Irvine.  
-My work sits at the intersection of **AI** and **clinical informatics**, with a focus on how NLP and LLMs can improve patient–provider communication and clinical workflows.
+Hi, I’m **Yawen Guo**, a Ph.D. student in the Department of Informatics at UC Irvine, advised by **Kai Zheng**. My research focuses on evaluating healthcare AI systems in real clinical settings and aligning them with human workflows, preferences, and operational constraints.
 
-### research focus
+I combine qualitative inquiry, natural language processing, large language model evaluation, and statistical analytics to study how AI tools reshape clinical documentation, patient-provider communication, data quality, and downstream care outcomes. You can find my publications on [Google Scholar](https://scholar.google.com/citations?user=4Vi6MzIAAAAJ&hl=en) and the curated list on my [publications](/publications/) page.
 
-- **Ambient AI for clinical scribes and documentation** — evaluation of ambient note–generation tools, customization across specialties, and impact on efficiency, equity, and education.  
-- **Patient–provider communication via patient portals** — large-scale analyses of secure messaging, computational methods, and AI-assisted triage/drafting tools.  
-- **Social media–based population health analytics** — large-scale text mining (Twitter, YouTube) for public attitudes toward health policies and pandemic responses.  
-- **Mining social determinants of health (SDOH)** — developing a cardiovascular disease–specific SDOH ontology from large-scale clinical notes, integrating SDOH with predictive modeling of outcomes.  
+### current research
+
+- **Ambient AI for clinical documentation** — evaluating AI-generated notes, clinician edits, documentation burden, specialty-specific customization needs, and the quality/safety implications of human-AI collaboration.
+- **Patient-provider communication via portals** — studying secure messaging patterns, clinician workload, patient communication quality, and AI-assisted triage/drafting tools.
+- **LLM evaluation for clinical workflows** — building practical evaluation pipelines for AI-generated text, including edit/error detection, confidence-aware triage, and evidence-span validation.
+- **Social determinants of health and predictive modeling** — developing SDOH extraction resources and integrating social-risk signals into cardiovascular outcome prediction.
+- **Population health text analytics** — mining social media and video data to understand public attitudes, health literacy, and information quality.
 
 ### collaborations
 
 - **UCI Health**  
-  - Clinical AI for documentation (Epic Signal, ambient scribes)  
-  - AI-assisted secure messaging in patient portals  
-  - AI chatbot pilots to streamline resident workflows  
+  Clinical AI implementation, ambient documentation evaluation, AI-assisted secure messaging, and workflow QA chatbot pilots for medical trainees.
 
 - **Mayo Clinic**  
-  - LLM-assisted SDOH ontology development (cardiovascular focus)  
-  - Predictive modeling for cardiovascular risk incorporating SDOH  
+  Cardiovascular risk prediction with SDOH, LLM-assisted ontology development, and standardized extraction of social-risk information from clinical notes.
 
 - **Keck Medicine of USC**  
-  - Drift monitoring pipelines for structured and unstructured clinical data (BioBERT embeddings; KL/JS/KS; PCA-based drift)  
-  - Predictive modeling for transfer center case prioritization, length of stay, readmission, and mortality  
+  Predictive analytics for transfer center prioritization, length of stay, readmission, mortality, and structured/free-text drift monitoring.
 
+### selected work
+
+- **Ambient AI documentation at UCI Health:** evaluated real-world AI documentation deployment across hundreds of clinicians, using workflow metrics, surveys, clinician feedback, and large-scale note analyses.
+- **Clinician edits to AI-drafted notes:** developed mixed-methods and LLM-assisted approaches to characterize how clinicians revise ambient AI drafts and where AI systems still require improvement.
+- **Secure messaging and AI:** reviewed patient portal secure messaging research and studied how AI tools can support communication quality while preserving transparency, trust, and equity.
+- **School-based fitness testing maps:** built geospatial tools for long-term California school fitness data to support analysis of health disparities and SDOH.
 
 ### selected recognition
-- **AMIA Student Paper Competition – 2nd Place (2022)**
-- **AMIA Best Student Paper – Finalist (2024)**
+- **Second Place**, AMIA Student Paper Competition — *2022*
+- **Best Student Paper Finalist**, AMIA Annual Symposium — *2024*
 
-### teaching
-- **INF 171 – Health Informatics**: Teaching Assistant (2021)  
-- **INF 171 – Health Informatics**: Guest Lecture — *Clinical AI applications* (2024, 2025)
+### teaching and mentorship
+- **INF 171 — Health Informatics**, Teaching Assistant — *2021*
+- **INF 171 — Health Informatics**, Guest Lecturer on clinical AI applications — *2024, 2025*
+- **INF 174 — Health Data Analytics**, Teaching Assistant — *2026*
+- Research mentor for undergraduate and master’s students working on secure messaging, ambient AI documentation, school-based fitness testing, and clinical workflow chatbot projects.
 
-I build practical, reproducible tooling for clinicians and data teams and enjoy collaborative, open science.  
-If you’d like to connect or collaborate, feel free to reach out.
+### service
+I have served as a reviewer for **Digital Health**, **Journal of Clinical and Translational Science**, **npj Health Systems**, **AMIA Annual Symposium**, **AMIA Informatics Summit**, and **IEEE International Conference on Healthcare Informatics**. I also volunteered at the AMIA Annual Symposium in 2022.
+
+I build practical, reproducible tools for clinicians and data teams and enjoy collaborative, open science. If you’d like to connect or collaborate, feel free to reach out.

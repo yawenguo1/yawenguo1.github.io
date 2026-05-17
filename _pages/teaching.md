@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: teaching
 description: Courses and guest lectures.
-nav: true
+nav: false
 nav_order: 6
 ---
 

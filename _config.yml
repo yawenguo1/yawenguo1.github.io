@@ -6,8 +6,7 @@ title: "Yawen Guo" # the website title (if blank, full name will be used instead
 first_name: Yawen
 middle_name:
 last_name: Guo
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   PhD student in Informatics at UC Irvine. NLP for healthcare, secure messaging,
   ambient AI scribes, and data drift monitoring.
@@ -49,7 +48,7 @@ repo_trophies:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
