@@ -26,7 +26,9 @@
   {% else %}
     {% capture title %}{{ site.title }}{% endcapture %}
   {% endif %}
-  {% if page.url == '/blog/index.html' %}
+  {% if page.url == '/' and page.title and page.title != 'blank' %}
+    {{ page.title }}
+  {% elsif page.url == '/blog/index.html' %}
     {{ page.title }} | {{ title }}
   {% elsif page.title != 'blank' and page.url != '/' %}
     {% if page.title == null or page.title == '' %}
@@ -78,6 +80,7 @@
 
 {% if site.serve_schema_org %}
   <!-- Schema.org -->
+  {% assign meta_description = page.description | default: site.description | strip | strip_newlines %}
   {% comment %} Social links generator for "sameAs schema" {% endcomment %}
   {% assign sameaslinks = '' | split: ',' %}
   {% for social in site.data.socials %}
@@ -223,22 +226,57 @@
     {% endcase %}
   {% endfor %}
 
-  <script type="application/ld+json">
-    {
-        "author":
-        {
-            "@type": "Person",
-            "name": "{{ author_name }}"
+  {% if page.url == '/' %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ author_name }}",
+        "url": "{{ site.url }}{{ site.baseurl }}/",
+        "image": "{{ site.url }}{{ site.baseurl }}/assets/img/prof_pic.jpg",
+        "jobTitle": "Ph.D. Candidate in Informatics",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of California, Irvine",
+          "url": "https://uci.edu/"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Carnegie Mellon University"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Beihang University"
+          }
+        ],
+        "knowsAbout": [
+          "Healthcare AI",
+          "Clinical informatics",
+          "Natural language processing",
+          "Large language model evaluation",
+          "Ambient AI documentation",
+          "Patient-provider communication"
+        ],
+        "description": {{ meta_description | jsonify }}{% if sameaslinks != blank %},
+        "sameAs": {{ sameaslinks | jsonify }}{% endif %}
+      }
+    </script>
+  {% else %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "author": {
+          "@type": "Person",
+          "name": "{{ author_name }}",
+          "url": "{{ site.url }}{{ site.baseurl }}/"
         },
         "url": "{{ page.url | prepend: site.baseurl | prepend: site.url }}",
-        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebSite{% endif %}",
-        "description": "{% if page.description %}{{ page.description }}{% else if site.description %}{{ site.description }}{% endif %}",
+        "@type": "{% if is_blog_post %}BlogPosting{% else %}WebPage{% endif %}",
+        "description": {{ meta_description | jsonify }},
         "headline": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
-        {% if sameaslinks != blank %}
-        "sameAs": {{ sameaslinks | jsonify }},
-        {% endif %}
-        "name": "{{ author_name }}",
-        "@context": "https://schema.org"
-    }
-  </script>
+        "name": "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+      }
+    </script>
+  {% endif %}
 {% endif %}

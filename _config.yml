@@ -8,13 +8,15 @@ middle_name:
 last_name: Guo
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  PhD student in Informatics at UC Irvine. NLP for healthcare, secure messaging,
-  ambient AI scribes, and data drift monitoring.
+  Yawen Guo is a Ph.D. candidate in Informatics at UC Irvine researching
+  healthcare AI, clinical informatics, natural language processing, large
+  language model evaluation, ambient AI documentation, and patient-provider
+  communication.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Yawen Guo, Yawen Guo UCI, UC Irvine Informatics, healthcare AI, clinical informatics, natural language processing, NLP, large language models, LLM evaluation, ambient AI documentation, patient portal, secure messaging
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -60,9 +62,9 @@ max_width: 930px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 
-serve_og_meta: false
-serve_schema_org: false
-og_image:
+serve_og_meta: true
+serve_schema_org: true
+og_image: https://yawenguo1.github.io/assets/img/prof_pic.jpg
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

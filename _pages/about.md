@@ -1,8 +1,10 @@
 ---
 layout: about
-title: about
+title: Yawen Guo | Ph.D. Candidate in Informatics, UC Irvine
 permalink: /
 subtitle: <a href='https://www.informatics.uci.edu/'>UCI Informatics</a> · Human-Centered AI for Healthcare · Clinical Informatics
+description: Yawen Guo is a Ph.D. candidate in Informatics at UC Irvine researching healthcare AI, clinical informatics, NLP, LLM evaluation, ambient AI documentation, and patient-provider communication.
+keywords: Yawen Guo, Yawen Guo UCI, UC Irvine Informatics, healthcare AI, clinical informatics, NLP, LLM evaluation, ambient AI documentation, patient-provider communication
 
 profile:
   align: right

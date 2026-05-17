@@ -3,6 +3,7 @@ layout: page
 permalink: /publications/
 title: publications
 description: peer-reviewed publications and recent preprints in reverse chronological order.
+keywords: Yawen Guo publications, Yawen Guo Google Scholar, healthcare AI publications, clinical informatics, ambient AI documentation, secure messaging
 nav: true
 nav_order: 2
 ---
