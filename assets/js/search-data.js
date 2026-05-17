@@ -3,8 +3,8 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-yawen-guo-ph-d-candidate-in-informatics-uc-irvine",
+    title: "Yawen Guo | Ph.D. Candidate in Informatics, UC Irvine",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
@@ -453,6 +453,20 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("mailto:%79%61%77%65%6E%67%35@%75%63%69.%65%64%75", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/yawenguo1", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/yawen--guo", "_blank");
         },
       },{
         id: 'social-scholar',
